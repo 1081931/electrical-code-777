@@ -1,0 +1,45 @@
+ext_prim = 0
+ext_sec = 0
+
+idg_1 = 0
+idg_2 = 0
+
+idg_backup_1 = 0
+idg_backup_2 = 0
+
+apu_gen = 0
+
+AC_bus_left = 0  --voltage
+AC_bus_right = 0 --voltage
+
+AC_transfer_left = 0 --voltage
+AC_transfer_right = 0 --voltage
+
+AC_bus_tie_left = 0
+AC_bus_tie_right = 0
+
+
+--sec and prim ext, apu gen, and right idg are separated by left bus tie
+--sec ext, apu gen, and left idg are separated by right bus tie
+
+function bus_tie()
+  if AC_bus_tie_left = 1
+    if AC_bus_left = 0
+
+     
+
+    end
+    if AC_bus_right = 0
+
+    end
+  end
+ 
+if AC_bus_tie_right = 1
+    if AC_bus_left = 0
+
+    end
+    if AC_bus_right = 0
+
+    end
+  end
+end
